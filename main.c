@@ -55,10 +55,11 @@ int main(int argc, char* argv[]) {
 
     printf("============= PLAYER 1 V PLAYER 2 SHOWDOWN ============\n\n");
 
-    curRound = 1;
+    curRound = 0;
     while (playerChamps[0] != NULL && playerChamps[1] != NULL) { // while both players have champions
         results[0] = 0;
         results[1] = 0;
+        curRound++;
 
         /*========================================
          print round number and players champions
@@ -207,6 +208,7 @@ int main(int argc, char* argv[]) {
                     playerChamps[i] = removeChampion(playerChamps[i]);
                 }
             }
+
         }
 
         /*=============
